@@ -79,3 +79,17 @@ if __name__ == "__main__":
             polar_force(264, 90 - 30),
         ]
     )
+    location = array([[0, 0], [0, 0], [0, 0]])
+
+    assert in_static_equilibrium(forces, location)
+
+    # Problem in image_data/2D_problems_1.jpg
+    forces = array([[0, -2000], [0, -1200], [0, 15600], [0, -12400]])
+
+    location = array([[0, 0], [6, 0], [10, 0], [12, 0]])
+
+    assert in_static_equilibrium(forces, location)
+
+    import doctest
+
+    doctest.testmod()

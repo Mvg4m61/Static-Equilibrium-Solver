@@ -79,6 +79,7 @@ if __name__ == "__main__":
             polar_force(264, 90 - 30),
         ]
     )
+    
     location = array([[0, 0], [0, 0], [0, 0]])
 
     assert in_static_equilibrium(forces, location)
